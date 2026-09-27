@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация | Lab 3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js" defer></script>
+</head>
+<body data-page="register">
+  <main class="auth-page">
+    <h1>Регистрация</h1>
+
+    <form id="register-form" method="post" action="register.html" novalidate>
+      <label for="register-name">Имя</label>
+      <input id="register-name" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required>
+
+      <label for="register-email">Email</label>
+      <input id="register-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+
+      <label for="register-password">Пароль</label>
+      <input id="register-password" name="password" type="password" autocomplete="new-password" placeholder="Минимум 4 символа" minlength="4" required>
+
+      <label for="register-confirm">Повторите пароль</label>
+      <input id="register-confirm" name="confirm" type="password" autocomplete="new-password" placeholder="Повторите пароль" minlength="4" required>
+
+      <p class="form-message" id="register-message" aria-live="polite"></p>
+
+      <button type="submit">Создать аккаунт</button>
+    </form>
+
+    <p class="form-switch">Уже есть аккаунт? <a href="index.html">Войти</a></p>
+  </main>
+</body>
+</html>

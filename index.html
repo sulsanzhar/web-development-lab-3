@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход | Lab 3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js" defer></script>
+</head>
+<body data-page="login">
+  <main class="auth-page">
+    <h1>Вход</h1>
+
+    <form id="login-form" method="post" action="index.html" novalidate>
+      <label for="login-email">Email</label>
+      <input id="login-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+
+      <label for="login-password">Пароль</label>
+      <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Введите пароль" required>
+
+      <p class="form-message" id="login-message" aria-live="polite"></p>
+
+      <button type="submit">Войти</button>
+    </form>
+
+    <p class="form-switch">Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+  </main>
+</body>
+</html>
